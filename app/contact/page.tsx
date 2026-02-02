@@ -27,10 +27,14 @@ export default function ContactPage() {
               <Link href="/about" className="hover:text-primary transition-colors font-semibold">من نحن</Link>
               <Link href="/contact" className="text-primary font-semibold">اتصل بنا</Link>
             </div>
-            <a href="tel:01227447390" className="btn-primary flex items-center gap-2">
-              <Phone className="w-5 h-5" />
-              <span className="hidden sm:inline">اتصل بنا</span>
-            </a>
+            <div className="flex gap-2">
+              <a href="tel:01222214318" className="btn-primary flex items-center gap-1 py-2 px-2 md:py-3 md:px-3">
+                <Phone className="w-4 h-4" />
+              </a>
+              <a href="tel:01211114318" className="btn-primary flex items-center gap-1 py-2 px-2 md:py-3 md:px-3">
+                <Phone className="w-4 h-4" />
+              </a>
+            </div>
           </div>
         </nav>
       </header>
@@ -65,9 +69,14 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-bold text-lg mb-2">الهاتف</h3>
-                    <a href="tel:01227447390" className="text-xl font-semibold group-hover:underline">
-                      01227447390
-                    </a>
+                    <div className="flex flex-col gap-2">
+                      <a href="tel:01222214318" className="text-lg font-semibold group-hover:underline">
+                        01222214318
+                      </a>
+                      <a href="tel:01211114318" className="text-lg font-semibold group-hover:underline">
+                        01211114318
+                      </a>
+                    </div>
                     <p className="text-gray-600 group-hover:text-gray-100 mt-1">
                       اتصل بنا مباشرة
                     </p>
@@ -95,9 +104,16 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-bold text-lg mb-2">الموقع</h3>
-                    <p className="text-xl font-semibold">مصر</p>
+                    <a 
+                      href="https://maps.app.goo.gl/JnzCgHYM6qgLCUfe8" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-xl font-semibold group-hover:underline block"
+                    >
+                      مصر
+                    </a>
                     <p className="text-gray-600 group-hover:text-gray-100 mt-1">
-                      نخدم جميع أنحاء مصر
+                      اضغط لفتح الموقع على الخريطة
                     </p>
                   </div>
                 </div>
@@ -134,13 +150,22 @@ export default function ContactPage() {
                   نحن ملتزمون بتقديم أفضل المنتجات والخدمات لعملائنا.
                 </p>
                 <div className="space-y-4">
-                  <a 
-                    href="tel:01227447390" 
-                    className="btn-primary w-full text-center flex items-center justify-center gap-2"
-                  >
-                    <Phone className="w-5 h-5" />
-                    اتصل الآن: 01227447390
-                  </a>
+                  <div className="flex flex-col gap-3">
+                    <a 
+                      href="tel:01222214318" 
+                      className="btn-primary w-full text-center flex items-center justify-center gap-2"
+                    >
+                      <Phone className="w-5 h-5" />
+                      01222214318
+                    </a>
+                    <a 
+                      href="tel:01211114318" 
+                      className="btn-primary w-full text-center flex items-center justify-center gap-2"
+                    >
+                      <Phone className="w-5 h-5" />
+                      01211114318
+                    </a>
+                  </div>
                   <Link 
                     href="/products" 
                     className="btn-secondary w-full text-center flex items-center justify-center gap-2"
@@ -151,24 +176,93 @@ export default function ContactPage() {
               </div>
 
               <div className="bg-gradient-to-r from-primary to-primary-dark text-white rounded-2xl p-8">
-                <h3 className="text-2xl font-bold mb-4">هل تحتاج مساعدة فورية؟</h3>
+                <h3 className="text-2xl font-bold mb-4">موقعنا على الخريطة</h3>
                 <p className="text-gray-100 mb-6">
-                  فريق خدمة العملاء لدينا متاح دائمًا لمساعدتك. لا تتردد في التواصل معنا.
+                  قم بزيارتنا أو شاهد موقعنا على خرائط Google
                 </p>
-                <div className="flex flex-col gap-3">
-                  <div className="flex items-center gap-3">
-                    <Phone className="w-5 h-5" />
-                    <span>استجابة سريعة</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Mail className="w-5 h-5" />
-                    <span>دعم احترافي</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <MapPin className="w-5 h-5" />
-                    <span>خدمة في جميع أنحاء مصر</span>
-                  </div>
-                </div>
+                <a 
+                  href="https://maps.app.goo.gl/JnzCgHYM6qgLCUfe8" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-white text-primary hover:bg-gray-100 font-bold py-3 px-6 rounded-lg transition-all"
+                >
+                  <MapPin className="w-5 h-5" />
+                  افتح الخريطة
+                </a>
+              </div>
+
+              <div className="bg-gradient-to-br from-secondary to-gray-800 text-white rounded-2xl p-8">
+                <h3 className="text-2xl font-bold mb-4">تابعنا على السوشيال ميديا</h3>
+                <p className="text-gray-100 mb-6">
+                  كن على اطلاع بآخر منتجاتنا وعروضنا الخاصة
+                </p>
+                <a 
+                  href="https://www.facebook.com/profile.php?id=61585647893017" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-3 bg-white text-secondary hover:bg-gray-100 font-bold py-3 px-6 rounded-lg transition-all"
+                >
+                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                  </svg>
+                  تابعنا على فيسبوك
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+                  قم بزيارتنا أو شاهد موقعنا على خرائط Google
+                </p>
+                <a 
+                  href="https://maps.app.goo.gl/JnzCgHYM6qgLCUfe8" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-white text-primary hover:bg-gray-100 font-bold py-3 px-6 rounded-lg transition-all"
+                >
+                  <MapPin className="w-5 h-5" />
+                  افتح الخريطة
+                </a>
+              </div>
+              {/* Social Media */}
+              <div className="bg-gradient-to-br from-secondary to-gray-800 text-white rounded-2xl p-8">
+                <h3 className="text-2xl font-bold mb-4">تابعنا على السوشيال ميديا</h3>
+                <p className="text-gray-100 mb-6">
+                  كن على اطلاع بآخر منتجاتنا وعروضنا الخاصة
+                </p>
+                <a 
+                  href="https://www.facebook.com/profile.php?id=61585647893017" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-3 bg-white text-secondary hover:bg-gray-100 font-bold py-3 px-6 rounded-lg transition-all"
+                >
+                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                  </svg>
+                  تابعنا على فيسبوك
+                </a>
+              </div>            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Map Section */}
+      <section className="py-12 bg-white">
+        <div className="container-custom">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">موقعنا</h2>
+            <div className="rounded-2xl overflow-hidden shadow-2xl">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55251.37764837493!2d31.224509999999998!3d30.0444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDAyJzM5LjgiTiAzMcKwMTMnMjguMiJF!5e0!3m2!1sen!2seg!4v1234567890123!5m2!1sen!2seg"
+                width="100%" 
+                height="450" 
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                title="موقع مصنع نيو حمادة"
+              ></iframe>
+            </div>
               </div>
             </div>
           </div>

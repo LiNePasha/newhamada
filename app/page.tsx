@@ -33,16 +33,24 @@ export default function HomePage() {
     "name": "مصنع نيو حمادة",
     "image": "https://newhamada.com/images/logo_newhamada.webp",
     "url": "https://newhamada.com",
-    "telephone": "+20-122-744-7390",
+    "telephone": "+20-122-221-4318",
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "EG",
       "addressLocality": "مصر"
     },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "30.0444",
+      "longitude": "31.2245"
+    },
+    "hasMap": "https://maps.app.goo.gl/JnzCgHYM6qgLCUfe8",
     "description": "خبرة تفوق 40 عامًا في صناعة العبوات البلاستيكية بجودة عالية وابتكار مستمر",
     "priceRange": "$$",
     "openingHours": "Sa-Th 09:00-18:00",
-    "sameAs": []
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=61585647893017"
+    ]
   }
 
   return (
@@ -186,10 +194,16 @@ export default function HomePage() {
                 <Link href="/products" className="btn-secondary text-sm md:text-base text-center py-2.5 md:py-3 px-5 md:px-6">
                   استكشف منتجاتنا ({productsData.length})
                 </Link>
-                <a href="tel:01227447390" className="bg-white text-primary hover:bg-gray-100 font-bold py-2.5 md:py-3 px-4 md:px-6 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 text-sm md:text-base">
-                  <Phone className="w-4 h-4" />
-                  <span>01227447390</span>
-                </a>
+                <div className="flex flex-col sm:flex-row gap-2">
+                  <a href="tel:01222214318" className="bg-white text-primary hover:bg-gray-100 font-bold py-2.5 px-4 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 text-sm">
+                    <Phone className="w-4 h-4" />
+                    <span>01222214318</span>
+                  </a>
+                  <a href="tel:01211114318" className="bg-white text-primary hover:bg-gray-100 font-bold py-2.5 px-4 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 text-sm">
+                    <Phone className="w-4 h-4" />
+                    <span>01211114318</span>
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -361,10 +375,16 @@ export default function HomePage() {
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             تواصل معنا الآن واحصل على أفضل الحلول لاحتياجاتك من العبوات البلاستيكية
           </p>
-          <a href="tel:01227447390" className="btn-secondary inline-flex items-center gap-2 text-lg">
-            <Phone className="w-6 h-6" />
-            اتصل بنا الآن: 01227447390
-          </a>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="tel:01222214318" className="btn-secondary inline-flex items-center gap-2 text-lg">
+              <Phone className="w-6 h-6" />
+              01222214318
+            </a>
+            <a href="tel:01211114318" className="btn-secondary inline-flex items-center gap-2 text-lg">
+              <Phone className="w-6 h-6" />
+              01211114318
+            </a>
+          </div>
         </div>
       </section>
 
@@ -406,7 +426,10 @@ export default function HomePage() {
               <ul className="space-y-3">
                 <li className="flex items-center gap-3 text-gray-400">
                   <Phone className="w-5 h-5 text-secondary" />
-                  <a href="tel:01227447390" className="hover:text-white transition-colors">01227447390</a>
+                  <div className="flex flex-col gap-1">
+                    <a href="tel:01222214318" className="hover:text-white transition-colors">01222214318</a>
+                    <a href="tel:01211114318" className="hover:text-white transition-colors">01211114318</a>
+                  </div>
                 </li>
                 <li className="flex items-center gap-3 text-gray-400">
                   <Mail className="w-5 h-5 text-secondary" />
@@ -414,9 +437,33 @@ export default function HomePage() {
                 </li>
                 <li className="flex items-start gap-3 text-gray-400">
                   <MapPin className="w-5 h-5 text-secondary flex-shrink-0" />
-                  <span>مصر</span>
+                  <a 
+                    href="https://maps.app.goo.gl/JnzCgHYM6qgLCUfe8" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hover:text-white transition-colors hover:underline"
+                  >
+                    مصر - شاهد الموقع على الخريطة
+                  </a>
                 </li>
               </ul>
+            </div>
+            
+            <div>
+              <h4 className="font-bold text-lg mb-4">تابعنا</h4>
+              <div className="flex gap-4">
+                <a 
+                  href="https://www.facebook.com/profile.php?id=61585647893017" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-all group"
+                  aria-label="Facebook"
+                >
+                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
           

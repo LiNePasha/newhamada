@@ -27,10 +27,14 @@ export default function AboutPage() {
               <Link href="/about" className="text-primary font-semibold">من نحن</Link>
               <Link href="/contact" className="hover:text-primary transition-colors font-semibold">اتصل بنا</Link>
             </div>
-            <a href="tel:01227447390" className="btn-primary flex items-center gap-2">
-              <Phone className="w-5 h-5" />
-              <span className="hidden sm:inline">اتصل بنا</span>
-            </a>
+            <div className="flex gap-2">
+              <a href="tel:01222214318" className="btn-primary flex items-center gap-1 py-2 px-2 md:py-3 md:px-3">
+                <Phone className="w-4 h-4" />
+              </a>
+              <a href="tel:01211114318" className="btn-primary flex items-center gap-1 py-2 px-2 md:py-3 md:px-3">
+                <Phone className="w-4 h-4" />
+              </a>
+            </div>
           </div>
         </nav>
       </header>

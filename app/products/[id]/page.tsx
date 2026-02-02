@@ -39,10 +39,14 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
                 <h1 className="text-xl font-bold text-primary">مصنع نيو حمادة</h1>
               </div>
             </Link>
-            <a href="tel:01227447390" className="btn-primary flex items-center gap-2">
-              <Phone className="w-5 h-5" />
-              <span className="hidden sm:inline">اتصل بنا</span>
-            </a>
+            <div className="flex gap-2">
+              <a href="tel:01222214318" className="btn-primary flex items-center gap-1 py-2 px-2 md:py-3 md:px-3">
+                <Phone className="w-4 h-4" />
+              </a>
+              <a href="tel:01211114318" className="btn-primary flex items-center gap-1 py-2 px-2 md:py-3 md:px-3">
+                <Phone className="w-4 h-4" />
+              </a>
+            </div>
           </div>
         </nav>
       </header>
@@ -119,13 +123,22 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
                 <p className="mb-6 text-gray-100">
                   تواصل معنا الآن للحصول على عرض سعر وتفاصيل الطلب
                 </p>
-                <a 
-                  href="tel:01227447390" 
-                  className="btn-secondary inline-flex items-center gap-2 w-full justify-center"
-                >
-                  <Phone className="w-5 h-5" />
-                  اتصل بنا: 01227447390
-                </a>
+                <div className="flex flex-col gap-3">
+                  <a 
+                    href="tel:01222214318" 
+                    className="btn-secondary inline-flex items-center gap-2 w-full justify-center"
+                  >
+                    <Phone className="w-5 h-5" />
+                    01222214318
+                  </a>
+                  <a 
+                    href="tel:01211114318" 
+                    className="btn-secondary inline-flex items-center gap-2 w-full justify-center"
+                  >
+                    <Phone className="w-5 h-5" />
+                    01211114318
+                  </a>
+                </div>
               </div>
             </div>
           </div>
