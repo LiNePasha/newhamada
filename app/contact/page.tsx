@@ -212,39 +212,6 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
-                  قم بزيارتنا أو شاهد موقعنا على خرائط Google
-                </p>
-                <a 
-                  href="https://maps.app.goo.gl/JnzCgHYM6qgLCUfe8" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-white text-primary hover:bg-gray-100 font-bold py-3 px-6 rounded-lg transition-all"
-                >
-                  <MapPin className="w-5 h-5" />
-                  افتح الخريطة
-                </a>
-              </div>
-              {/* Social Media */}
-              <div className="bg-gradient-to-br from-secondary to-gray-800 text-white rounded-2xl p-8">
-                <h3 className="text-2xl font-bold mb-4">تابعنا على السوشيال ميديا</h3>
-                <p className="text-gray-100 mb-6">
-                  كن على اطلاع بآخر منتجاتنا وعروضنا الخاصة
-                </p>
-                <a 
-                  href="https://www.facebook.com/profile.php?id=61585647893017" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-3 bg-white text-secondary hover:bg-gray-100 font-bold py-3 px-6 rounded-lg transition-all"
-                >
-                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                  </svg>
-                  تابعنا على فيسبوك
-                </a>
-              </div>            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Map Section */}
       <section className="py-12 bg-white">
@@ -262,8 +229,6 @@ export default function ContactPage() {
                 referrerPolicy="no-referrer-when-downgrade"
                 title="موقع مصنع نيو حمادة"
               ></iframe>
-            </div>
-              </div>
             </div>
           </div>
         </div>
